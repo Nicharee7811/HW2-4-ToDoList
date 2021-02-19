@@ -1,0 +1,17 @@
+<h1>My Tasks today</h1>
+
+<div>
+    <ul>
+        <li *ngFor = "let t of todos; let i = index">
+            <input type = "text" name = "" [(ngModel)]="t.name">
+            <button (click)="del()">Delete</button>
+        </li>
+    </ul>
+
+   <form action="", (submit) = "add()">
+        <h2><b>Task:</b>
+            <input type = "text" name = "newtodo" [(ngModel)="newtodo"]>
+            <button>Add</button>
+        </h2>
+   </form>
+</div>
